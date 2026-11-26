@@ -1,0 +1,76 @@
+{
+  "version": "soil-policy-ontology-v1.0.0-draft",
+  "scope_note": "Draft vocabulary for evidence-grounded classification of agricultural and environmental policies with explicit soil objectives or mechanisms.",
+  "relevance_levels": [
+    {
+      "code": "DIRECT",
+      "definition": "Soil protection, restoration, monitoring or condition is an explicit policy objective."
+    },
+    {
+      "code": "EXPLICIT_MECHANISM",
+      "definition": "The policy has another primary objective but explicitly specifies a soil-related mechanism, practice, indicator or expected soil effect."
+    },
+    {
+      "code": "CO_BENEFIT_ONLY",
+      "definition": "The source explicitly identifies soil improvement as a secondary benefit."
+    },
+    {
+      "code": "NOT_DEMONSTRATED",
+      "definition": "A soil relationship may be agronomically plausible but is not stated in the supplied evidence."
+    }
+  ],
+  "soil_objectives": [
+    {"code": "EROSION_CONTROL", "label": "Soil erosion control", "definition": "Prevent or reduce soil loss by water, wind or tillage.", "exclude": "Generic land management without an explicit erosion pathway."},
+    {"code": "ORGANIC_CARBON", "label": "Soil organic carbon", "definition": "Maintain or increase soil organic carbon stocks or concentration.", "exclude": "Generic GHG mitigation without an explicit soil-carbon mechanism."},
+    {"code": "ORGANIC_MATTER", "label": "Soil organic matter", "definition": "Maintain or improve soil organic matter or related soil condition.", "exclude": "Carbon claims that do not address soil organic matter or carbon."},
+    {"code": "FERTILITY_NUTRIENT_BALANCE", "label": "Soil fertility and nutrient balance", "definition": "Maintain fertility or improve nutrient balances and nutrient-use management.", "exclude": "Input support without a stated soil or nutrient-management objective."},
+    {"code": "CONTAMINATION_CONTROL", "label": "Soil contamination control", "definition": "Prevent, reduce, remediate or monitor contaminants in soil.", "exclude": "Food-residue controls without a soil pathway."},
+    {"code": "SOIL_BIODIVERSITY", "label": "Soil biodiversity", "definition": "Protect or restore soil organisms, biological activity or below-ground biodiversity.", "exclude": "Above-ground biodiversity with no soil-biota connection."},
+    {"code": "STRUCTURE_COMPACTION", "label": "Soil structure and compaction", "definition": "Improve aggregation, porosity or physical condition, or reduce compaction.", "exclude": "Machinery support without an explicit soil-structure mechanism."},
+    {"code": "WATER_RETENTION", "label": "Soil water retention", "definition": "Improve infiltration, water-holding capacity or drought-buffering soil functions.", "exclude": "Irrigation investment without an explicit soil-water function."},
+    {"code": "SALINISATION_CONTROL", "label": "Salinisation control", "definition": "Prevent, monitor or remediate soil salinity or sodicity.", "exclude": "Water-quality measures without a soil-salinity pathway."},
+    {"code": "LAND_DEGRADATION", "label": "Land degradation and desertification", "definition": "Prevent, reverse or monitor loss of land and soil productive or ecological capacity.", "exclude": "Rural development without an explicit degradation pathway."},
+    {"code": "PEATLAND_WETLAND_SOILS", "label": "Peatland and wetland soils", "definition": "Protect, rewet or restore organic and wetland soils.", "exclude": "Wetland biodiversity measures without an explicit soil or peat mechanism."},
+    {"code": "SOIL_MONITORING", "label": "Soil monitoring and information", "definition": "Establish soil measurement, reporting, mapping or information systems.", "exclude": "General farm reporting without soil variables."}
+  ],
+  "policy_instruments": [
+    {"code": "REGULATORY_REQUIREMENT", "label": "Regulatory requirement", "definition": "A binding obligation, prohibition, threshold or management standard."},
+    {"code": "CONDITIONALITY", "label": "Support conditionality", "definition": "A soil-related condition attached to eligibility for public support."},
+    {"code": "AREA_OR_PRACTICE_PAYMENT", "label": "Area- or practice-based payment", "definition": "Payment conditional on adopting or maintaining a defined soil-management practice."},
+    {"code": "RESULT_BASED_PAYMENT", "label": "Result-based payment", "definition": "Payment linked to a measured or verified environmental result."},
+    {"code": "INVESTMENT_SUPPORT", "label": "Investment support", "definition": "Grant, loan, guarantee or other support for soil-related capital investment."},
+    {"code": "TAX_FEE_CHARGE", "label": "Tax, fee or charge", "definition": "A fiscal charge intended to influence soil-relevant behaviour or inputs."},
+    {"code": "ADVISORY_TRAINING", "label": "Advisory and training", "definition": "Soil testing advice, extension, knowledge exchange, training or capacity building."},
+    {"code": "RESEARCH_DEMONSTRATION", "label": "Research and demonstration", "definition": "Research, pilots, demonstrations or technology development related to soil."},
+    {"code": "MONITORING_REPORTING", "label": "Monitoring and reporting", "definition": "Mandatory or voluntary soil measurement, disclosure, mapping or reporting."},
+    {"code": "CERTIFICATION_LABELLING", "label": "Certification and labelling", "definition": "A standard, certification or label containing soil-related criteria."},
+    {"code": "LAND_USE_PLANNING", "label": "Land-use planning", "definition": "Spatial planning, zoning or land-allocation rules with explicit soil objectives."},
+    {"code": "VOLUNTARY_AGREEMENT", "label": "Voluntary agreement", "definition": "A non-binding commitment or agreement adopted by public or private actors."}
+  ],
+  "management_practices": [
+    "cover_crops",
+    "crop_rotation",
+    "reduced_tillage",
+    "no_till",
+    "residue_management",
+    "organic_amendments",
+    "nutrient_management",
+    "buffer_strips",
+    "contour_farming",
+    "agroforestry",
+    "grassland_maintenance",
+    "peatland_rewetting",
+    "controlled_grazing",
+    "soil_testing",
+    "other_explicit_practice"
+  ],
+  "outcome_stages": [
+    "policy_design",
+    "planned_target",
+    "implementation_input",
+    "adoption_output",
+    "measured_soil_outcome",
+    "modelled_soil_outcome",
+    "broader_environmental_or_economic_effect"
+  ]
+}

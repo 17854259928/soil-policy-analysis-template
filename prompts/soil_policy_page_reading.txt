@@ -1,0 +1,18 @@
+Read page {page_number} as a document examiner and soil-policy analyst.
+
+Produce a faithful intermediate representation before policy interpretation:
+
+1. Transcribe visible headings and body text in reading order.
+2. Reconstruct tables with headers, row labels, values, units and notes.
+3. Describe relevant figures only when their labels or values are legible.
+4. Preserve footnotes, definitions and qualifiers that change interpretation.
+5. Identify explicit policy names, legal identifiers, dates, budgets, target
+   actors, eligible land, soil practices, indicators, targets and results.
+6. Mark whether a claim concerns policy design, planned implementation,
+   adoption/output, measured outcome or modelled/expected outcome.
+7. Preserve concise evidence cues for bindingness and soil relevance.
+
+Do not infer missing cells, repair uncertain numbers, treat a practice as an
+outcome, or assign an ontology code from a generic environmental statement.
+If the page continues a table or sentence from another page, mark the
+cross-page dependency explicitly.

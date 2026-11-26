@@ -1,0 +1,22 @@
+Review one proposed soil-policy record against its source evidence.
+
+Check:
+
+1. Scope: Is soil relevance explicit, secondary, or not demonstrated?
+2. Identity: Are policy name, legal identifier and jurisdiction supported?
+3. Temporality: Are adoption, implementation, target and reporting dates kept
+   separate?
+4. Instrument: Is the controlled code consistent with bindingness, payment
+   design and implementation mechanism?
+5. Results chain: Are planned targets, adoption outputs, measured outcomes and
+   modelled effects separated?
+6. Indicators: Are units, depth, baseline, spatial scale and method preserved?
+7. Evidence: Does every positive or uncertain claim have a local quotation and
+   locator?
+8. Missingness: Has the record used null/empty values rather than speculation?
+9. Conflicts: Are contradictory values or classifications retained for review?
+10. Comparability: Does any harmonisation exceed what the source supports?
+
+Return a list of confirmed fields, correction-required fields, missing evidence,
+ontology ambiguities and recommended reviewer actions. Do not silently rewrite
+the source record.

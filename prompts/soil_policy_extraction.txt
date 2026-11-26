@@ -1,0 +1,57 @@
+Task: extract and analytically classify one bounded fragment from an official
+soil, agricultural, land-use or environmental policy document.
+
+1. Policy identity
+- Record the official policy, programme, intervention or legal-act name.
+- Record legal identifiers, jurisdiction, responsible authority and parent
+  programme only when stated.
+- Distinguish adoption, entry into force, implementation and target dates.
+
+2. Soil-policy relevance
+- Assign DIRECT only when soil protection, restoration, monitoring or soil
+  condition is an explicit objective.
+- Assign EXPLICIT_MECHANISM when the primary objective is different but the
+  document explicitly states a soil practice, pathway, indicator or effect.
+- Assign CO_BENEFIT_ONLY when soil improvement is explicitly secondary.
+- Assign NOT_DEMONSTRATED when a soil relationship is merely plausible.
+- Do not equate climate action, sustainability or good agricultural practice
+  with soil-policy relevance without local textual evidence.
+
+3. Objectives, threats and instruments
+- Apply only codes defined in the supplied soil-policy ontology.
+- Preserve the explicit name of an instrument even when no controlled code is
+  suitable.
+- Distinguish binding regulation, support conditionality, voluntary payments,
+  result-based payments, investment, advice, monitoring and certification.
+- Record target actors and bindingness.
+
+4. Implementation and coverage
+- Extract implementation start/end, geographic coverage, eligible land,
+  farming systems, target groups, budget, currency and funding period.
+- Record participating farms, supported area and adoption rate only when stated.
+- Do not convert a planned target into an achieved output.
+
+5. Soil practices and indicators
+- Extract only explicitly named management practices.
+- For every soil indicator, preserve value, unit, direction, baseline, target
+  year, soil depth, sampling basis, spatial scale and measurement method when
+  observable.
+- Keep measured, modelled and expected values separate.
+
+6. Results and effects
+- Separate implementation inputs, adoption outputs, measured soil outcomes,
+  modelled outcomes and broader effects.
+- Record GHG, water, biodiversity, production, cost, income or food-security
+  effects only when explicitly reported or expected in the source.
+- Label causal language as explicit, expected, reported, modelled or inferred.
+
+7. Evidence and missing information
+- Every positive or uncertain label requires a concise verbatim evidence cue
+  and page, section, table, row or other available locator.
+- Do not calculate, aggregate or harmonise values unless explicitly requested.
+- Unknown scalar fields are null; unknown arrays are empty.
+- Report contradictions, ambiguous terminology and missing units as warnings.
+
+8. Output
+- Return exactly one JSON object matching the supplied schema.
+- Do not add Markdown fences, comments, prefixes or fields not in the schema.
